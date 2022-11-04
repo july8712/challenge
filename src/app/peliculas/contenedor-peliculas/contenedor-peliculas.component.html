@@ -1,0 +1,20 @@
+<app-cartelera></app-cartelera>
+
+<div class="container-xxl">
+  <div class="row">
+    <div class="col-12">
+      <h1>{{valor | titlecase}}</h1>
+    </div>
+  </div>
+  <div class="row row-cols-1 row-cols-md-4 g-4">
+      <app-pelicula *ngFor="" ></app-pelicula>
+
+  </div>
+
+  <ul>
+    <li *ngFor="let pelicula of resultados">
+      {{pelicula.title}}
+    </li>
+  </ul>
+
+</div>
